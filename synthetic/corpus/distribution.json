@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "source": "内容维护方只读导出纯计数（导出时刻 2026-09-21T20:28:52+08:00，口径=GET /api/v2/dispatch 全量 440 单 Counter 分组，零内容字段；请求单见派工系统，不引真号以过 R1 闸）",
+    "scaling": "方案①工单表样例单上限 200：全维计数按 200/440 比例最大余数法缩放（非零桶保底 1；PASS/FAIL 二分受终态缩放和约束；solo/confirm 按终态占比缩放）；域分布剔除词表外脏值桶 2 单（governance、机制层 各 1，已申明勿合并）",
+    "chain_note": "链直方图为「挂链单数」口径（chains 登记端点 agent 无权限）；real 55 vs 挂链率口径 54 差 1 已由导出方申明",
+    "note": "分布真实、内容虚构（见 DECLARATION.md）；本 config 可公开：全部为计数与比例，派发方已匿名化为 S 桶降序"
+  },
+  "real": {
+    "total_orders": 440,
+    "status_counts": {"已完成": 296, "终止": 122, "canceled": 5, "进行中": 6, "已报验": 6, "待领取": 5},
+    "verdict_counts": {"PASS": 296, "FAIL": 127},
+    "domain_counts": {"gov": 140, "t8": 109, "audit": 63, "kb": 41, "hub": 31, "general": 22, "infra": 20, "live": 6, "desk": 4, "content": 2},
+    "dispatcher_counts_anon": {"S1": 386, "S2": 21, "S3": 18, "S4": 6, "S5": 6, "S6": 3},
+    "chains": {"chain_count": 17, "size_hist": {"1": 7, "2": 4, "3": 2, "5": 1, "6": 1, "8": 1, "15": 1}},
+    "months": {"2026-09": 440},
+    "accept_level_counts": {"solo": 41, "confirm": 25},
+    "window": {"first_created": "2026-09-13", "last_created": "2026-09-21"}
+  },
+  "sample_size": 200
+}

@@ -1,0 +1,11 @@
+{
+ "config": "distribution.json",
+ "files": {
+  "DECLARATION.md": "a292462a96b5168fd02ed08b7f304d1dfd5fee739012434d5296a7fd296b811f",
+  "data/chains.jsonl": "995bc42e52cbb83dedeacbd6ffd65076c9bc64fba0f10dbdd705d5738774e99a",
+  "data/orders.jsonl": "414aef0168e65c3624633c4f85ea30ac00cabb22aa967f2ce049fae4248467cb",
+  "distribution.json": "f4c9f48ec1825ae57fc4e06f72beedaf41bbc244b70ba6b3fdac456659dd65bd",
+  "registry_sample.md": "bfae972bb764973c7610afd2110147311391ef0f9d524306c37636095c8a4aa6"
+ },
+ "seed": 42
+}
